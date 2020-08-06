@@ -1,0 +1,81 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator:\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: functions.php
+msgid "Головне меню"
+msgstr ""
+
+#: functions.php
+msgid "Сайдбар"
+msgstr ""
+
+#: functions.php
+msgid "Додайте сюди віджети."
+msgstr ""
+
+#: functions.php
+msgid "Меню"
+msgstr ""
+
+#: post_type
+msgid "Додати новий запис"
+msgstr ""
+
+#: post_type
+msgid "Редагувати запис"
+msgstr ""
+
+#: post_type
+msgid "Новий запис"
+msgstr ""
+
+#: post_type
+msgid "Переглянути запис"
+msgstr ""
+
+#: post_type
+msgid "Знайти запис"
+msgstr ""
+
+#: post_type
+msgid "Записів не знайдено"
+msgstr ""
+
+#: post_type
+msgid "В корзині записів не знайдено"
+msgstr ""
+
+#: post_type
+msgid "Всі записи"
+msgstr ""
+
+#: post_type
+msgid "Додати"
+msgstr ""
+
+#: functions-acf.php
+msgid "Загальні налаштування теми"
+msgstr ""
+
+#: functions-acf.php
+msgid "Тема"
+msgstr ""
+
+#: functions-menu.php
+msgid "Виникла помилка. Не знайдено жодного меню!"
+msgstr ""
+
+#: functions-menu.php
+msgid "Не додано жодного меню!"
+msgstr ""

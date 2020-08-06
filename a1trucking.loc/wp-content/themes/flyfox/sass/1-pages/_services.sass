@@ -1,0 +1,206 @@
+.services__advantages-header
+	width: 47.604vw
+	height: 9.479vw
+	margin: -4.740vw auto 0
+	box-shadow: 0px -22px 12px rgba(0, 0, 0, 0.15)
+
+.services__advantages
+	margin-top: 0
+
+// Cards
+
+.services__cards-blocks
+	display: flex
+	justify-content: center
+	width: 100%
+
+.services__cards-block
+	background: $accent
+	border-radius: 8px
+	max-width: 20.313vw
+	margin: 0 0.781vw
+
+.card__header
+	padding: 0.625vw
+	text-align: center
+	background: linear-gradient(196.82deg, #1968B3 -106.3%, #4C97DD 73.07%)
+	color: $white
+	border-radius: 8px 8px 0px 0px
+
+.card__header-title
+	font-size: 1.302vw
+	line-height: 1.823vw
+
+.card__header-interest
+	font-size: 2.604vw
+	line-height: 3.125vw
+
+.card__header-descr
+	font-size: 0.781vw
+	line-height: 1.302vw
+
+.card__descr
+	padding: 0.625vw 0.885vw 0.521vw
+	font-size: 0.781vw
+	line-height: 1.302vw
+	border-bottom: 1px solid #B6D2ED
+	text-align: center
+	font-weight: 300
+
+.cards__list
+	padding: 0.625vw 1.979vw 0.833vw
+	font-weight: 300
+
+.card__button
+	text-align: center
+
+.card__btn
+	padding: 0.833vw 0
+	color: $white
+	display: block
+	&:hover
+		color: $white
+
+.card__info
+	background: #d0e3f5
+	color: $darkgrey
+
+.card__list-item
+	margin-bottom: 0.208vw
+	position: relative
+	&::before
+		content: ''
+		background: $accent
+		width: 0.313vw
+		height: 0.313vw
+		position: absolute
+		left: -0.729vw
+		top: 50%
+		transform: translateY(-50%)
+		border-radius: 100%
+
+@media screen and (max-width: 1366px)
+
+	.services__cards-block
+		max-width: 33.33%
+		margin: 0 2.196vw 0 0
+
+	.services__cards-block:last-child
+		margin: 0
+
+	.card__header
+		padding: 0.878vw
+
+	.card__header-title
+		font-size: 1.830vw//25
+		line-height: 2.562vw//35
+
+	.card__header-interest
+		font-size: 3.660vw//50
+		line-height: 4.392vw//60
+
+	.card__header-descr
+		font-size: 1.098vw//15
+		line-height: 1.830vw//25
+
+	.card__descr
+		padding: 0.878vw 2.196vw 0.732vw
+		font-size: 1.098vw//15
+		line-height: 1.830vw//25
+
+	.cards__list
+		padding: 0.878vw 2.782vw 1.171vw
+		font-size: 1.318vw
+		line-height: 2.196vw
+
+	.card__btn
+		padding: 1.171vw 0
+		font-size: 1.464vw
+		line-height: 1.830vw
+
+	.card__list-item
+		&::before
+			width: 0.439vw
+			height: 0.439vw
+			left: -1.025vw
+
+@media screen and (max-width: 992px)
+
+	.services__advantages-header
+		margin: -7.460vw auto 0
+		width: 77.823vw
+		height: 15.927vw
+		padding: 4.032vw
+		text-align: center
+		display: flex
+		align-items: center
+
+@media screen and (max-width: 768px)
+
+	.services__advantages-header
+		margin: -10.2vw auto 0
+		height: 20.573vw
+
+	.services__cards-blocks
+		padding: 0 15px
+
+
+@media screen and (max-width: 576px)
+
+	.services__advantages-header
+		margin: -18.333vw auto 0
+		width: 92.500vw
+		height: 50.556vw
+		padding: 8.333vw 4.167vw
+		text-align: center
+		display: flex
+		align-items: center
+
+	// Cards
+	.services__cards-blocks
+		flex-direction: column
+
+	.services__cards-block
+		max-width: 91.667vw
+		margin: 0
+		margin-bottom: 30px
+
+	.services__cards-block:first-child
+		margin-top: 19.444vw
+
+	.card__header
+		padding: 3.333vw
+
+	.card__header-title
+		font-size: 6.944vw
+		line-height: 9.722vw
+
+	.card__header-interest
+		font-size: 13.889vw
+		line-height: 16.667vw
+
+	.card__header-descr
+		font-size: 4.167vw
+		line-height: 6.944vw
+
+	.card__descr
+		padding: 3.333vw 3.889vw
+		font-size: 4.167vw
+		line-height: 6.944vw
+
+	.cards__list
+		padding: 3.333vw 10.556vw
+		font-size: 5vw
+		line-height: 8.333vw
+
+	.card__btn
+		padding: 4.444vw 0
+		font-size: 5.556vw
+		line-height: 6.944vw
+
+	.card__list-item
+		margin-bottom: 1.111vw
+		&::before
+			width: 1.667vw
+			height: 1.667vw
+			left: -3.889vw

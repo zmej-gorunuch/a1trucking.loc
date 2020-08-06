@@ -1,0 +1,74 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.custom-select {
+  position: relative;
+
+  & select {
+    display: none;
+  }
+}
+
+.select-list {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 0 1px 1px 1px;
+  border-radius: 0 0 3px 3px;
+
+  &__item {
+    color: $defaultTextColor;
+    @include fontSize(12,14);
+    font-weight: normal;
+    padding: 10px 16px 10px 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+
+    & + & {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover {
+      color: $accentColor;
+    }
+
+
+    &.--curent {
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      padding: 13px 16px 14px 16px;
+      min-height: 50px;
+      &:after {
+        content: '\e900';
+        font-family: 'icomoon' !important;
+        font-size: 16px;
+        position: absolute;
+        color: $accentColor;
+        top: 50%;
+        right: 16px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      &:hover {
+        color: $defaultTextColor;
+      }
+
+    }
+  }
+}
+
+
+.select-hide {
+  display: none;
+}
+
+

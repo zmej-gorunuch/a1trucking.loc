@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<code>partnership_page</code>
+    <name>Partnership Page module</name>
+    <version>0.1.0</version>
+    <author>Eugene M</author>
+    <file path="admin/controller/common/column_left.php">
+    	<operation>
+    		<search trim="true" index="0"><![CDATA[
+                $marketing = array();
+            ]]></search>
+            <add position="after" offset="1"><![CDATA[
+            if ($this->user->hasPermission('access', 'extension/module/partnership')) {
+				$marketing[] = array(
+					'name'	   => $this->language->get('partnership_menu_title'),
+					'href'     => $this->url->link('extension/module/partnership', 'token=' . $this->session->data['token'], true),
+					'children' => array()
+				);
+			}
+            ]]></add>
+    	</operation>
+    </file>
+
+    <file path="admin/language/en-gb/common/column_left.php">
+        <operation>
+            <search trim="true" index="0"><![CDATA[
+				$_['text_paypal_search']             = 'Search';
+            ]]></search>
+            <add position="after" trim="false" offset="0"><![CDATA[
+                $_['partnership_menu_title']  = 'Partnership';
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/language/ru-ru/common/column_left.php">
+        <operation>
+            <search trim="true" index="0"><![CDATA[
+				// Text
+            ]]></search>
+            <add position="after" trim="false" offset="0"><![CDATA[
+                $_['partnership_menu_title']  = 'Партнерство';
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/language/uk-ua/common/column_left.php">
+        <operation>
+            <search trim="true" index="0"><![CDATA[
+				// Text
+            ]]></search>
+            <add position="after" trim="false" offset="0"><![CDATA[
+                $_['partnership_menu_title']  = 'Партнерство';
+            ]]></add>
+        </operation>
+    </file>
+
+</modification>

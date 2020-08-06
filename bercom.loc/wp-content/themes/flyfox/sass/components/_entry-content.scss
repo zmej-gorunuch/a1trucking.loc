@@ -1,0 +1,157 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.entry-content {
+  font-family: 'AvenirNextCyr', sans-serif;
+  font-weight: normal;
+
+  & p {
+    @include fontSize(14, 16);
+    font-weight: 400;
+    color: $defaultTextColor;
+    margin-bottom: 16px;
+    line-height: 1.625;
+  }
+
+  & h2, & h3, & h4, & h5, & h6 {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  & h2 {
+    @include fontSize(20, 24);
+    line-height: 1.5;
+  }
+
+  & h3 {
+    @include fontSize(20, 24);
+    line-height: 1.5;
+  }
+
+  & h4 {
+    @include fontSize(16, 18);
+    line-height: 1.444;
+  }
+
+  & h5 {
+    @include fontSize(14, 16);
+  }
+
+  & h6 {
+    @include fontSize(12, 14);
+  }
+
+  h4, h5, h6 {
+    margin-bottom: 24px;
+  }
+
+  & a {
+    color: $accentColor;
+    text-decoration: none;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $accentColor;
+      @include transition(.3);
+    }
+
+    &:hover {
+      &:before {
+        content: '';
+        width: 0;
+      }
+    }
+  }
+
+  & ul, & ol {
+    margin-bottom: 16px;
+
+    & li {
+      @include fontSize(14, 16);
+      font-weight: 400;
+      line-height: 1.5;
+      color: $defaultTextColor;
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 5px;
+    }
+  }
+
+  & ul {
+    & li {
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 5px;
+        height: 5px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        background: $accentColor;
+      }
+    }
+  }
+
+  & ol {
+    & li {
+      counter-increment: list;
+
+      &:before {
+        content: counter(list) ".";
+        font-weight: 500;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        width: 12px;
+
+        color: $accentColor;
+      }
+    }
+  }
+
+  & blockquote {
+    padding: 79px 0 0 0px;
+    position: relative;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    @media (max-width: $breakpoint-lg) {
+      padding: 60px 0 0 0;
+      width: 100%;
+    }
+
+    &, & p {
+      @include fontSize(16, 24);
+      line-height: 1.25;
+      color: $accentColor;
+      font-weight: 450;
+    }
+
+    &:before {
+      content: '';
+      width: 77px;
+      height: 63px;
+      background: url("../img/quote.svg") center center no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: -1;
+      @media (max-width: $breakpoint-lg) {
+        content: '';
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+}

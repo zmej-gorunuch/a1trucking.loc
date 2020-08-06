@@ -1,0 +1,146 @@
+@import config
+
+@import 0-base/404
+@import 0-base/buttons
+@import 0-base/soc-networks
+@import 0-base/forms
+@import 0-base/select
+@import 0-base/footer
+@import 0-base/slider
+@import 0-base/header
+
+@import 1-pages/home
+@import 1-pages/contacts
+@import 1-pages/tryforfree
+@import 1-pages/services
+@import 1-pages/blog
+@import 1-pages/blog-item
+@import 1-pages/thankyoupage
+
+// CUSTOM USER STYLES
+
+.link__underline
+	color: $white
+	position: relative
+	&:hover
+		color: $white
+		text-decoration: none
+	&::after
+		transition: 0.35s
+		content: ''
+		position: absolute
+		background: $white
+		width: 0
+		height: 3px
+		bottom: -1.5px
+		left: 0
+	&:hover::after
+		width: 100%
+
+.title
+	font-family: Josefin Sans
+	font-weight: normal
+	font-style: normal
+	font-size: 2.6vw
+	line-height: 3.2vw
+	color: $textcolor
+
+.title--blue
+	color: $accent
+
+.overlay
+	background: linear-gradient(202.46deg, rgba(25, 104, 179, 0.8) -106.3%, rgba(76, 151, 221, 0.8) 73.07%)
+
+.home-button__tff--pulse,
+.contacts-button__tff--pulse
+	position: fixed
+	bottom: 4vw
+	right: 4vw
+	z-index: 42
+
+.top__bg
+	background-image: url(../images/dest/image52.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 25.104vw
+	width: 100%
+
+.page-baner
+	height: 20.573vw
+
+.section__subtitle
+	font-size: 0.938vw
+	line-height: 1.563vw
+
+@media screen and (max-width: 1366px)
+
+	.title
+		font-size: 2.562vw
+		line-height: 3.294vw
+
+	.section__subtitle
+		font-size: 1.098vw
+		line-height: 1.830vw
+
+	.top__bg
+		height: 25.622vw
+
+	.page-baner
+		height: 20.132vw
+
+@media screen and (max-width: 992px)
+
+	.title
+		font-size: 3.528vw
+		line-height: 4.536vw
+
+	.section__subtitle
+		font-size: 1.815vw
+		line-height: 3.024vw
+
+	.top__bg
+		height: 35.282vw
+
+	.page-baner
+		height: 28.73vw
+
+@media screen and (max-width: 768px)
+
+	.title
+		font-size: 4.557vw
+		line-height: 5.859vw
+
+	.section__subtitle
+		font-size: 1.953vw
+		line-height: 3.255vw
+
+	.top__bg
+		height: calc(66.667vw + 65px)
+
+	.page-baner
+		height: 66.667vw
+
+	.menu__link.link__underline
+		&::after
+			display: none
+
+@media screen and (max-width: 576px)
+
+	.title
+		font-size: 35px
+		line-height: 45px
+
+	.section__subtitle
+		font-size: 15px
+		line-height: 25px
+
+	.top__bg
+		height: 66.667vw
+
+	.page-baner
+		height: 66.667vw
+
+	.menu__link.link__underline
+		&::after
+			display: none

@@ -1,0 +1,255 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.footer {
+  padding: 0 0 24px 0;
+  background: url("../img/footerBg.png") no-repeat center center;
+  background-size: cover;
+  color: $accentColor;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.625;
+
+  &-navigation {
+    padding: 26px 0 41px 0;
+    @media (max-width: $breakpoint-lg) {
+      padding: 24px 0 12px 0;
+    }
+
+    & .menu {
+      &-item {
+        color: $defaultTextColor;
+        display: inline-block;
+        margin: 0 31.5px;
+        @media (max-width: $breakpoint-lg) {
+          margin: 0 0 24px 0;
+          display: block;
+        }
+
+        & a {
+          position: relative;
+          display: inline-block;
+          font-family: 'Room', sans-serif;
+          font-weight: bold;
+          color: $accentColor;
+          font-size: 20px;
+          line-height: 23px;
+
+          &:after {
+            content: '';
+            background: $accentColor;
+            opacity: 0.24;
+            height: 5px;
+            width: 0;
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            @include transition(.3);
+          }
+
+          &:hover {
+            &:after {
+              width: 100%;
+              @include transition(.3);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .logo-wrap {
+    position: relative;
+    padding: 12px 0 27px 0;
+    max-width: 330px;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: $breakpoint-lg) {
+      padding: 15px 0 24px 0;
+      max-width: 320px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $whiteColor;
+      box-shadow: 0px 0px 48px #E3E3E4;
+      border-radius: 0px 0px 163.5px 163.5px;
+      z-index: 1;
+    }
+
+    &__link {
+      width: 194px;
+      margin: 0 auto;
+
+    }
+
+    &__icon {
+
+    }
+  }
+}
+
+.contacts-list {
+  color: $accentColor;
+
+  & > li {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.625;
+  }
+
+  &.--phone {
+    & a {
+      font-family: 'Room', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+
+  &.--email {
+    & a {
+      position: relative;
+
+      &:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: $accentColor;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        @include transition(.3);
+      }
+
+      &:hover {
+        &:after {
+          content: '';
+          width: 0;
+          left: 100%;
+        }
+      }
+    }
+  }
+}
+
+.developed {
+  &__link {
+    & b {
+      position: relative;
+
+      &:after {
+        content: '';
+        background: $accentColor;
+        opacity: 0.24;
+        height: 5px;
+        width: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include transition(.3);
+      }
+    }
+
+    &:hover {
+      & b {
+        &:after {
+          content: '';
+          width: 100%;
+          @include transition(.3);
+        }
+      }
+    }
+  }
+}
+
+/* pulse in CSS */
+
+.pulse-box {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 998;
+  @media (max-width: $breakpoint-md) {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  &__content {
+    @include circle(92px);
+    background: $accentColor;
+    text-align: center;
+    color: $whiteColor;
+    font-weight: 600;
+    @include fontSize(12, 14);
+    line-height: 1.14;
+
+    &:before,
+    &:after {
+      content: '';
+      @include circle(92px);
+      background-color: $accentColor;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: auto;
+      transform: scale(0.2);
+      transform-origin: center center;
+      animation: pulse-me 3s linear infinite;
+      @media (max-width: $breakpoint-md) {
+        @include circle(48px);
+      }
+    }
+
+    @media (max-width: $breakpoint-md) {
+      @include circle(48px);
+    }
+
+    &:after {
+      animation-delay: 2s;
+    }
+
+    & img {
+      display: none;
+      @media (max-width: $breakpoint-md) {
+        display: block;
+      }
+    }
+
+    & p {
+      @media (max-width: $breakpoint-md) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.about {
+  padding: 30px 0;
+  color: $accentColor;
+
+  &-title {
+    @include fontSize(30, 58);
+    line-height: 1.12;
+    font-family: 'Room', sans-serif;
+    color: $accentColor;
+
+  }
+
+  &-icon {
+    margin: 26px 0 36px 0;
+  }
+
+  &-catalog {
+    margin-bottom: 24px;
+
+    &__title {
+      margin-bottom: 18px;
+    }
+  }
+
+  & .catalog-item {
+    height: 236px;
+    padding: 30px 20px;
+
+    &__title {
+      @include fontSize(16, 20);
+    }
+
+    &__icon {
+      height: 70%;
+    }
+  }
+
+  & .entry-content {
+    & h2, & h3, & h4, & h5, & h6 {
+      text-align: center;
+      font-weight: 450;
+    }
+
+    p {
+      color: $accentColor;
+      margin-bottom: 36px;
+    }
+  }
+}

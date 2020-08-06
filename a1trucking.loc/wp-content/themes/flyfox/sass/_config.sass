@@ -1,0 +1,139 @@
+// IMPORT SECTION
+
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss" // Bootstrap Reboot collection
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss" // Bootstrap Breakpoints mixin
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss" // Optional Bootstrap Grid
+// @import "node_modules/bootstrap/scss/utilities/_sizing.scss" // Optional Bootstrap Utilites
+
+
+// USER VARIABLES SECTION
+
+$accent:     #1968B3 // Accent Color
+$fontsize:   .95vw // Body Font Size
+$textcolor:  #333 // Text Color
+$lightcolor:  #ECECEC // Light gray
+$darkgrey: #465577
+$white:  #fff // Blue Color
+$mainfamily: 'Poppins', sans-serif // Main Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+
+// FONTS LOAD SECTION
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+// @include font('Museo Sans Cyrl', normal, 100, 'MuseoSansCyrl-100.ttf')
+// @include font('Museo Sans Cyrl', italic, 100, 'MuseoSansCyrl-100Italic.ttf')
+// @include font('Museo Sans Cyrl', normal, 300, 'MuseoSansCyrl-300.ttf')
+// @include font('Museo Sans Cyrl', italic, 300, 'MuseoSansCyrl-300Italic.ttf')
+// @include font('Museo Sans Cyrl', normal, 500, 'MuseoSansCyrl-500.ttf')
+// @include font('Museo Sans Cyrl', italic, 500, 'MuseoSansCyrl-500Italic.ttf')
+// @include font('Museo Sans Cyrl', normal, 700, 'MuseoSansCyrl-700.ttf')
+// @include font('Museo Sans Cyrl', italic, 700, 'MuseoSansCyrl-700Italic.ttf')
+// @include font('Museo Sans Cyrl', normal, 900, 'MuseoSansCyrl-900.ttf')
+// @include font('Museo Sans Cyrl', italic, 900, 'MuseoSansCyrl-900Italic.ttf')
+
+
+// GENERAL DOCUMENT STYLES
+
+::-webkit-scrollbar
+	width: 3px
+
+::-webkit-scrollbar-button
+	display: none
+
+::-webkit-scrollbar-track
+	width: 3px
+
+::-webkit-scrollbar-track-piece
+	width: 3px
+
+::-webkit-scrollbar-thumb
+	width: 3px
+	background: #0F1626
+
+::-webkit-scrollbar-corner
+	width: 3px
+
+::placeholder
+	color: #A4B1D1
+
+::selection
+	background-color: $accent
+	color: $white
+
+*,
+*:after,
+*:before 
+	box-sizing: border-box
+
+
+body
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $mainfamily
+	overflow-x: hidden
+	color: $darkgrey
+	background-color: $white
+
+h1
+	font-weight: normal
+
+h2
+	font-weight: normal
+
+h3
+	font-weight: 500
+
+h4
+	font-weight: 500
+
+h5
+	font-weight: 300
+	color: $darkgrey
+
+h6
+	font-weight: normal
+
+a,
+a:hover
+	color: $textcolor
+	text-decoration: none
+
+ol, ul
+	list-style: none
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+
+@media screen and (max-width: 1366px)
+
+	body
+		font-size: 1.098vw
+		line-height: 1.830vw
+
+@media screen and (max-width: 992px)
+
+	body
+		font-size: 1.512vw
+		line-height: 2.520vw
+
+
+@media screen and (max-width: 576px)
+
+	body
+		font-size: 15px
+		line-height: 25px

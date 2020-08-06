@@ -1,0 +1,244 @@
+.blog
+	padding-bottom: 3.333vw
+	
+.blog__header
+	width: 47.604vw
+	height: 9.479vw
+	margin: -4.740vw auto 30px
+	background: $white
+	box-shadow: 0px -22px 12px rgba(0, 0, 0, 0.15)
+	display: flex
+	align-items: center
+
+.blog__items
+	max-width: 47.656vw
+	margin: 0 auto
+
+.blog__item
+	margin-bottom: 1.771vw
+
+.blog__img
+	border-radius: 4px
+	max-width: 100%
+
+.blog__title
+	font-size: 1.302vw
+	line-height: 1.823vw
+	font-weight: 500
+	margin: 16px 0 8px
+
+.blog__descr
+	max-height: 3.906vw
+	overflow: hidden
+	font-size: 0.833vw
+	color: $darkgrey
+	font-weight: 300
+
+.blog__view-more
+	color: $accent
+	text-transform: uppercase
+	font-size: 0.781vw
+	line-height: 1.302vw
+	position: relative
+	font-weight: 600
+	background: none
+	padding-left: 0
+	margin-top: 0.417vw
+	&::after
+		content: ''
+		background-image: url(../images/icons/view-more-right.svg)
+		position: absolute
+		right: -0.938vw
+		width: 1.042vw
+		height: 0.521vw
+		background-repeat: no-repeat
+		background-size: contain
+		top: 50%
+		transform: translateY(-50%)
+		transition: 0.35s
+	&:hover::after
+		right: -1.146vw
+
+.blog__pagination
+	margin-top: 0.313vw
+
+.pagination
+	display: flex
+	justify-content: center
+
+.pagination__arrows
+	cursor: pointer
+	display: flex
+	align-items: center
+
+.pagination__items
+	display: flex
+	padding: 0 0.625vw
+
+.pagination__item
+	cursor: pointer
+	width: 2.083vw
+	height: 2.083vw
+	color: $accent
+	border-radius: 4px
+	background: none
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: 0.35s
+	border: 1px solid transparent
+	&:hover
+		border: 1px solid $accent
+
+.pagination__item--active
+	background: $accent
+	color: $white
+
+@media screen and (max-width: 1366px)
+
+	.blog
+		padding-bottom: 3.514vw
+
+	.blog__header
+		width: 62.958vw
+		height: 11.567vw
+		margin: -6.149vw auto 30px
+
+	.blog__items
+		max-width: 62.958vw
+
+	.blog__item
+		margin-bottom: 1.757vw
+
+	.blog__title
+		font-size: 1.830vw
+		line-height: 2.562vw
+
+	.blog__descr
+		max-height: 5.490vw
+		font-size: 1.171vw
+
+	.blog__view-more
+		font-size: 1.098vw
+		line-height: 1.830vw
+		margin-top: 0.586vw
+		&::after
+			right: -2.050vw
+			width: 2.050vw
+			height: 0.721vw
+		&:hover::after
+			right: -2.546vw
+
+	.blog__pagination
+		margin-top: 2.196vw
+
+	.pagination__items
+		padding: 0 1.171vw
+
+	.pagination__item
+		width: 2.928vw
+		height: 2.928vw
+
+@media screen and (max-width: 992px)
+
+	.blog
+		padding-bottom: 4.839vw
+
+	.blog__header
+		width: 77.823vw
+		height: 15.927vw
+		margin: -7.460vw auto 30px
+
+	.blog__items
+		max-width: 100%
+
+	.blog__item
+		margin-bottom: 3.427vw
+
+	.blog__title
+		font-size: 2.520vw
+		line-height: 3.528vw
+
+	.blog__descr
+		max-height: 7.560vw
+		font-size: 1.512vw
+		line-height: 2.520vw
+
+	.blog__view-more
+		font-size: 1.512vw
+		line-height: 2.520vw
+		margin-top: 0.806vw
+		&::after
+			right: -2.016vw
+			width: 2.016vw
+			height: 0.821vw
+		&:hover::after
+			right: -3vw
+
+	.blog__pagination
+		margin-top: 4.032vw
+
+	.pagination__items
+		padding: 0 1.613vw
+
+	.pagination__item
+		width: 4.032vw
+		height: 4.032vw
+		
+@media screen and (max-width: 576px)
+
+	.blog
+		padding-bottom: 48px
+
+	.blog__header
+		margin: -18.333vw auto 0
+		width: 100%
+		height: 50.556vw
+		padding: 8.333vw 4.167vw
+		text-align: center
+		display: flex
+		align-items: center
+		font-size: 4.167vw
+		line-height: 6.944vw
+
+	.blog__items
+		max-width: 100%
+
+	.blog__item
+		margin-bottom: 40px
+
+	.blog__img
+		height: 93.056vw
+		object-fit: cover
+
+	.blog__title
+		font-size: 25px
+		line-height: 35px
+		margin: 21px 0 8px
+
+	.blog__descr
+		max-height: 75px
+		font-size: 15px
+		line-height: 25px
+
+	.blog__view-more
+		font-size: 15px
+		line-height: 25px
+		margin-top: 8px
+		&::after
+			right: -15px
+			width: 20px
+			height: 10px
+		&:hover::after
+			right: -20px
+
+	.blog__pagination
+		margin-top: 8px
+
+	.pagination__items
+		padding: 0 16px
+
+	.pagination__item
+		width: 40px
+		height: 40px
+		

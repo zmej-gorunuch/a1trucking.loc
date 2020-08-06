@@ -1,0 +1,79 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  outline: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-overflow-scrolling: touch;
+
+  &-body {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+  }
+
+  &-content {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding: 48px 63px;
+    max-width: 492px;
+    background: $whiteColor;
+    color: $defaultTextColor;
+    border-radius: 0;
+
+    @media (max-width: $breakpoint-md) {
+      margin: auto;
+      padding: 40px 15px 15px 15px;
+      overflow-y: auto;
+      height: auto;
+      max-height: 100%;
+      width: calc(100% - 30px);
+    }
+
+    &__title {
+      display: block;
+      color: $accentColor;
+      @include fontSize(18, 24);
+      line-height: 1.2;
+      margin: 0 0 24px 0;
+      font-weight: bold;
+    }
+
+    &__close {
+      position: absolute;
+      right: 21px;
+      top: 21px;
+      height: 16.5px;
+      width: 16.5px;
+      @media (max-width: $breakpoint-md) {
+        right: 15px;
+        top: 15px;
+      }
+    }
+
+    & .form__title {
+      margin-bottom: 24px;
+      font-weight: 450;
+    }
+  }
+}
+
+
+
+
+
+

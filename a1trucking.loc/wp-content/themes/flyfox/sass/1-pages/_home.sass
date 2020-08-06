@@ -1,0 +1,779 @@
+// Common styles
+
+.section__header
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.section__title-width
+	max-width: 44vw
+
+// Main Baner
+
+.main-baner
+	color: $white
+	height: 41vw
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+
+.main-baner__block
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	text-align: center
+	width: 100%
+	height: 100%
+
+.title.main-baner__title
+	font-weight: 600
+	font-size: 3.4vw
+	line-height: 4.2vw
+	max-width: 53vw
+	color: $white
+
+.main-baner__subtitle
+	max-width: 21vw
+
+.main-baner__buttons
+	display: flex
+	margin-top: .8vw
+	.button__login
+		margin-right: 10px
+
+// Adapt
+
+.adapt
+	padding-top: 3.1vw
+	position: relative
+
+.adapt__header
+	margin-bottom: 4.7vw
+
+.adapt__title
+	max-width: 34vw
+	margin-bottom: .6vw
+
+.adapt__advantages
+	display: grid
+	grid-template-columns: 3.9vw 1fr
+	margin-bottom: 1vw
+
+.adapt__advantages-icon
+	display: flex
+	justify-content: center
+	align-items: flex-start
+
+.adapt__advantages-content
+	font-weight: 300
+	margin-left: .8vw
+	color: $darkgrey
+
+.adapt-content__title
+	color: $textcolor
+	font-weight: 500
+
+.adapt
+	&__image
+		position: absolute
+		top: 0
+		padding-top: 3.1vw
+		right: 0
+		width: 60vw
+		overflow: hidden
+		padding-left: 10vw
+		padding-bottom: 10vw
+		&::before
+			content: ''
+			background: linear-gradient(217.79deg, #8CACFF -104.78%, #5A7BD0 72.03%)
+			opacity: 0.2
+			border-radius: 20.8929px
+			transform: matrix(.77,.44,-1.5,.82,750,-250)
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			right: 0
+			z-index: -1
+	&__img
+		max-width: 100%
+		margin-top: 3.1vw
+
+
+.adapt__advantages-img
+	max-width: 100%
+
+.adapt
+	.button__view-services
+		margin-left: 4.65vw
+
+// Advantages
+
+.advantages
+	position: relative
+	margin-top: 8.8vw
+
+.advantages__row
+	position: relative
+
+.advantages__header
+	background: $white
+	padding-bottom: 1.55vw
+
+.advantages__blocks
+	display: flex
+
+.advantages__block
+	max-width: 33.33%
+	height: 24.7vw
+	background: $white
+	border: 2px solid #DFDFDF
+	transition: 0.35s
+	&:hover
+		background: $accent
+	&:hover .advantages__block-link
+		color: $white
+	&:hover .advantages__block-descr
+		height: auto
+
+.advantages__block-link
+	height: 100%
+	padding: 1.275vw
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: flex-end
+
+.advantages__block-title
+	font-size: 1.3vw
+	font-weight: 500
+	line-height: 1.85vw
+	margin:
+		bottom: .24px
+		top: .8
+
+.advantages__block-descr
+	font-weight: 300
+	width: 100%
+	height: 1.5vw
+	overflow: hidden
+	display: block
+
+.advantages__block-img
+	max-width: 7.4vw
+
+.advantages
+	&__image
+		position: absolute
+		top: 0
+		left: -15px
+		width: 50vw
+		overflow: hidden
+		height: 200%
+		&::before
+			content: ''
+			background: linear-gradient(217.79deg, #8CACFF -104.78%, #5A7BD0 72.03%)
+			opacity: 0.2
+			border-radius: 20.8929px
+			transform: matrix(.77,.44,-1.5,.82,0,-200)
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			right: 0
+			z-index: -1
+	&__img
+		max-width: 100%
+
+// Freight
+
+.freight
+	margin-top: 6.4vw
+
+.freight__header
+	margin-bottom: 1.4vw
+
+.freight__blocks
+	display: flex
+	margin: 0 .8vw
+
+.freight__block
+	width: 33.33%
+	border: 2px solid #DFDFDF
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	position: relative
+	height: 19.75vw
+	padding: 1vw 1.275vw .8vw
+	overflow: hidden
+
+.freight__block-title
+	font-size: 1.25vw
+	line-height: 1.95vw
+	font-weight: 500
+
+.freight__block-descr
+	font-weight: 300
+	color: $darkgrey
+	
+.freight__block-img
+	position: absolute
+	top: 0
+	right: 0
+	max-width: 22vw
+
+// Numbers
+
+.numbers
+	margin-top: 3.2vw
+	position: relative
+
+.numbers__header
+	padding-bottom: 6.25vw
+
+.numbers__text
+	display: flex
+	flex-direction: column
+	font-weight: 300
+
+.numbers__text-title
+	font-weight: 500
+	font-size: 1.302vw
+	line-height: 1.85vw
+	margin-bottom: 15px
+	color: $textcolor
+
+.button__tff-numbers
+	margin-top: 1vw
+
+.numbers__figures
+	font-family: Josefin Sans
+	font-size: 3.9vw
+	line-height: 4.5vw
+	color: $accent
+
+.numbers__descr
+	max-width: 14vw
+
+.numbers__map
+	position: absolute
+	top: -8vw
+	z-index: -1
+
+.numbers__map-img
+	max-width: 35vw
+
+.numbers__block:nth-child(odd)
+	width: 33.33%
+
+.numbers__text
+	p
+		margin-bottom: 15px
+
+.numbers__blocks
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+// Our Partners
+
+.partners
+	margin-top: 9.7vw
+
+.partners__header
+	padding-bottom: 2.05vw
+
+.partners__tabs
+	display: flex
+	width: 100%
+	justify-content: center
+	margin-bottom: 2.05vw
+
+.partners__tabs-item
+	font-size: 1.3vw
+	line-height: 1.85vw
+	font-weight: 500
+	padding: .5vw 2.7vw
+	cursor: pointer
+	transition: 0.35s
+	&:hover
+		background: $accent
+		color: $white
+		border-radius: 4px
+
+.partners__tabs-item--active
+	background: $accent
+	color: $white
+	border-radius: 4px
+
+@media screen and (max-width: 1366px)
+
+	.main-baner
+		height: 38.433vw
+
+	.title.main-baner__title
+		font-size: 3.660vw
+		line-height: 4.392vw
+		max-width: 54.173vw
+
+	.main-baner__subtitle
+		max-width: 24.158vw
+
+	.main-baner__buttons
+		margin-top: 0.732vw
+
+	// Adapt
+	.adapt
+		padding-top: 3.514vw//48
+
+	.adapt__header
+		margin-bottom: 2.196vw//30
+
+	.adapt__advantages
+		grid-template-columns: 4.100vw 1fr
+		margin-bottom: 2.196vw
+
+	.adapt__advantages-content
+		margin-left: 1.098vw
+
+	.adapt-content__title
+		font-size: 1.830vw
+		line-height: 2.562vw
+		margin-bottom: 1.098vw
+
+	.adapt
+		&__image
+			padding-top: 6.589vw
+			width: 57vw
+			&::before
+				transform: matrix(.77,.44,-1.5,.82,550,-120)
+		&__img
+			max-width: 100%
+			margin-top: 6.589vw
+
+	.adapt
+		.button__view-services
+			margin-left: 5.198vw
+
+	// Advantages
+	.advantages
+		margin-top: 7.321vw
+
+	.advantages__header
+		padding-bottom: 2.196vw
+
+	.advantages__block
+		height: 24.158vw
+
+	.advantages__block-link
+		padding: 1.318vw 0.732vw
+
+	.advantages__block-title
+		font-size: 1.318vw//18
+		line-height: 2.196vw//30
+		margin:
+			bottom: 0.366vw
+			top: 1.171vw
+
+	.advantages__block-descr
+		height: 1.830vw
+
+	.advantages
+		&__image
+			&::before
+				transform: matrix(.77,.44,-1.5,.82,0,-100)
+
+	.advantages__block-img
+		max-width: 3.514vw
+
+	// Freight
+	.freight
+		margin-top: 7.321vw
+
+	.freight__header
+		margin-bottom: 2.196vw
+
+	.freight__block
+		height: 19.473vw
+
+	// Numbers
+	.numbers
+		margin-top: 4.392vw
+
+	.numbers__block:nth-child(odd)
+		width: 40%
+
+	.numbers__text-title
+		font-size: 1.830vw
+		line-height: 2.562vw
+
+	.numbers__map
+		top: 50%
+		transform: translateY(-50%)
+
+@media screen and (max-width: 992px)
+
+	.main-baner
+		height: 53.931vw
+
+	.title.main-baner__title
+		font-size: 5.040vw
+		line-height: 6.048vw
+		max-width: 73.790vw
+
+	.main-baner__subtitle
+		max-width: 33.468vw
+
+	.main-baner__buttons
+		margin-top: 1.613vw
+
+	.section__title-width
+		max-width: 66.431vw
+
+	// Adapt
+	.adapt
+		padding-top: 4.839vw//48
+
+	.adapt__header
+		margin-bottom: 3.024vw//30
+
+	.adapt__advantages
+		grid-template-columns: 5.645vw 1fr
+		margin-bottom: 3.024vw//30
+		max-width: 54.536vw
+
+	.adapt__advantages-content
+		margin-left: 1.512vw//15
+		max-width: 33.266vw//330
+
+	.adapt-content__title
+		font-size: 2.520vw//25
+		line-height: 3.528vw//35
+		margin-bottom: 1.512vw//15
+
+	.adapt
+		&__image
+			padding-top: 19.456vw
+			width: 55.867vw
+			&::before
+				transform: matrix(.77,.44,-1.5,.82,600,-80)
+		&__img
+			max-width: 100%
+			margin-top: 19.456vw
+
+	.adapt
+		.button__view-services
+			margin-left: 7.157vw
+
+	// Advantages
+	.advantages__block-title
+		font-size: 1.613vw//16
+		line-height: 2.419vw//24
+		margin:
+			bottom: 0.366vw
+			top: 1.171vw
+
+	.advantages__block-descr
+		height: 2.520vw
+		font-size: 1.310vw
+		line-height: 2.520vw
+
+	.advantages__block-img
+		max-width: 4.839vw
+
+	// Freight
+	.freight
+		margin-top: 7.321vw
+
+	.freight__header
+		margin-bottom: 2.196vw
+
+	.freight__block
+		height: 266px
+
+	.freight__block-title
+		font-size: 1.815vw
+		line-height: 3.024vw
+
+	.freight__block-img
+		max-width: 34vw
+		right: -14vw
+		top: -40px
+
+	.freight__block-descr
+		max-height: 7.258vw
+		overflow: hidden
+
+	// Numbers
+	.numbers
+		margin-top: 4.392vw
+
+	.numbers__block:nth-child(odd)
+		width: 50%
+
+	.numbers__text-title
+		font-size: 2.520vw
+		line-height: 3.528vw
+
+	.numbers__descr
+		max-width: 100%
+		padding-right: 30px
+
+	.numbers__figures
+		font-size: 3.528vw
+		line-height: 4.536vw
+
+	// Our partners
+	.partners__tabs-item
+		font-size: 2.016vw
+		line-height: 3.024vw
+		padding: 1.008vw 5.040vw
+
+
+	.partners__slider
+		padding: 5.343vw 11.290vw
+
+@media screen and (max-width: 768px)
+
+	// Common styles
+	.section__header
+		align-items: flex-start
+		text-align: left
+		
+	.section__title-width
+		max-width: 100%
+		margin-bottom: 8px
+
+	// Main banner
+	.main-baner
+		height: 575px
+
+	.title.main-baner__title
+		font-size: 35px
+		line-height: 45px
+		font-weight: normal
+		max-width: 80vw
+
+	.main-baner__subtitle
+		max-width: 80vw
+
+	// Adapt
+	.adapt
+		padding-top: 30px
+
+	.adapt
+		&__image
+			position: relative
+			padding: 0
+			width: calc(100% + 30px)
+			right: -15px
+			left: -15px
+			padding-bottom: 100px
+			&::before
+				transform: matrix(0.78, 0.43, -0.83, 0.82, 0, 0)
+				width: 139.546vw
+				height: 97.135vw
+				top: -26.042vw
+				right: -200px
+		&__img
+			max-width: 100%
+			margin-top: 0
+
+	.adapt__advantages
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin-bottom: 30px
+
+	.adapt__advantages
+		max-width: 100%
+
+	.adapt-content__title
+		font-size: 18px
+		line-height: 30px
+		font-weight: 500
+		margin-top: 11px
+
+	.adapt__advantages-content
+		max-width: 100%
+
+	.adapt
+		.button__view-services
+			margin-left: 0
+
+	// Advantages
+	.advantages
+		&__image
+			position: relative
+			margin-right: -15px
+			width: 110%
+			height: 470px
+			&::before
+				transform: matrix(.77,.44,-1.5,.82,0,0)
+				width: 200vw
+				height: 200vw
+				top: -100vw
+
+	.advantages__img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+
+	.advantages__blocks
+		flex-direction: column
+		margin: 0 -15px
+
+	.advantages__block
+		max-width: 100%
+		height: 292px
+		border-bottom: none
+
+	.advantages__block:last-child
+		border: 2px solid #DFDFDF
+
+	.advantages__block-link
+		padding: 16px 25px
+
+	.advantages__block-title
+		font-size: 16px
+		line-height: 24px
+		margin-top: 15px
+
+	.advantages__block-descr
+		font-size: 13px
+		line-height: 25px
+		height: 25px
+
+	.advantages__block-img
+		max-width: 48px
+		max-height: 48px
+
+	// Freight
+	.freight
+		margin-top: 48px
+
+	.freight__blocks
+		display: flex
+		flex-direction: column
+		margin: 0
+		width: 100%
+
+	.freight__block
+		width: 100%
+		height: 266px
+		padding: 15px
+		border-bottom: none
+
+	.freight__row .freight__blocks .freight__block:last-child
+		border-bottom: none
+
+	.freight__block:last-child
+		border-bottom: 2px solid #DFDFDF
+
+	.freight__block-title
+		font-size: 18px
+		line-height: 30px
+
+	.freight__block-img
+		max-width: 400px
+		right: -100px
+
+	// Numbers
+	.numbers
+		margin-top: 37px
+		color: $darkgrey
+
+	.numbers__block
+		padding: 0 15px
+		margin-top: 40px
+
+	.numbers__text-title
+		font-size: 18px
+		line-height: 30px
+
+	.numbers__figures
+		font-size: 29px
+		line-height: 35px
+
+	.numbers__block:nth-child(odd)
+		width: 50%
+
+	.numbers__block:nth-child(even)
+		width: 50%
+
+	.numbers__descr
+		max-width: 100%
+
+	.numbers__map-img
+		max-width: 100%
+		max-height: 320px
+
+	// Our Partners
+	.partners
+		margin-top: 100px
+
+	.partners__slider
+		margin: 
+			left: 0
+			right: 0
+
+	.partners__tabs
+		display: grid
+		grid-template-rows: 1fr 1fr
+		grid-template-columns: 1fr 1fr
+		text-align: center
+
+	.partners__tabs-item
+		width: 158px
+		margin: 0 auto
+		height: 50px
+		font-size: 18px
+		line-height: 30px
+		padding: 10px 26px
+
+	.swiper-button-prev
+		left: -4%
+		padding-left: 4vw
+		top: 0
+		margin-top: 0
+		width: 10vw
+		height: 100%
+		border-radius: 100%
+		background: #F2F2F2
+
+	.swiper-button-next
+		right: -4%
+		padding-right: 4vw
+		top: 0
+		margin-top: 0
+		width: 10vw
+		height: 100%
+		border-radius: 100%
+		background: #F2F2F2
+
+	.swiper-button-next:after,
+	.swiper-button-prev:after
+		font-size: 5vw
+
+
+@media screen and (max-width: 576px)
+
+	// Adapt
+	.adapt
+		&__image
+			&::before
+				width: 200vw
+				height: 105vw
+
+	// Advantages
+	.advantages
+		&__image
+			&::before
+				top: -50vw

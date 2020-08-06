@@ -1,0 +1,89 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  color: $whiteColor;
+  display: inline-block;
+  font-family: 'Room', 'icomoon', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 12px 24px;
+  @include transition(0.3);
+
+  &:focus {
+    outline: none;
+  }
+
+  &-primary {
+    background: $accentColor;
+    border-color: $accentColor;
+    display: inline-block;
+    position: relative;
+
+    width: 100%;
+    max-width: 185px;
+    height: 45px;
+    letter-spacing: 0;
+
+    & span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+      letter-spacing: 0;
+      @include transition(.3);
+      font-weight: 600;
+    }
+
+    & i {
+      margin-left: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      right: -28px;
+      transform: translateY(-50%);
+
+      &:after {
+        content: '';
+        width: 9px;
+        height: 2px;
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include transition(.3);
+      }
+    }
+
+    &:hover {
+      & span {
+        letter-spacing: 0.13em;
+      }
+
+      & i {
+        color: $accentColor;
+
+        &:after {
+          background: #fff;
+        }
+      }
+
+    }
+  }
+
+  &-more {
+    background: $accentColor;
+    width: 100%;
+
+    &:hover {
+      background: #788CEC;
+    }
+  }
+}
+

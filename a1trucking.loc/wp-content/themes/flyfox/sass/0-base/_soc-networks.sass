@@ -1,0 +1,93 @@
+.social-item__inner
+	width: 1.85vw
+	height: 1.85vw
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 100%
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06)
+	background: $white
+	transition: 0.35s
+
+.social-item
+	svg
+		max-width: 0.85vw
+		max-height: 0.85vw
+
+.social-item__twitter
+	transition: 0.35s
+	&:hover .social-item__inner
+		background: #03A9F4
+		path
+			fill: $white
+
+.social-item__facebook
+	transition: 0.35s
+	&:hover .social-item__inner
+		background: #3A559F
+		path
+			fill: $white
+
+.social-item__instagram
+	transition: 0.35s
+	position: relative
+	.social-item__inner::before
+		transition: 0.35s
+		opacity: 0
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: linear-gradient(45deg, #FFC107 9.15%, #F44336 50.57%, #9C27B0 90.03%)
+		border-radius: 100%
+	&:hover .social-item__inner::before
+		opacity: 1
+	&:hover path
+		fill: $white
+	svg
+		z-index: 42
+
+.social-item__linkedin
+	transition: 0.35s
+	&:hover .social-item__inner
+		background: #1976D2
+		path
+			fill: $white
+
+path
+	transition: 0.35s
+
+@media screen and (max-width: 1366px)
+
+	.social-item__inner
+		width: 2.635vw
+		height: 2.635vw
+
+	.social-item
+		svg
+			max-width: 1.171vw
+			max-height: 1.171vw
+
+@media screen and (max-width: 992px)
+
+	.social-item__inner
+		width: 3.629vw
+		height: 3.629vw
+
+	.social-item
+		svg
+			max-width: 1.613vw
+			max-height: 1.613vw
+
+@media screen and (max-width: 576px)
+
+	.social-item__inner
+		width: 36px
+		height: 36px
+
+	.social-item
+		svg
+			max-width: 16px
+			max-height: 16px

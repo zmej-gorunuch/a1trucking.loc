@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc191649-a3ce-487e-aab3-472b18d98d04" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\OSPanel\domains\universedev.loc\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1ZXBrhJFM7NfcxzB6n3Fecul6SW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../agromtz.loc" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="two.files.diff.last.used.file" value="E:/FlyFox project/universedev.io/Верстка/UniverseDev-master/form.html" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OSPanel\domains\universedev.loc\app\view\cookie" />
+      <recent name="E:\OSPanel\domains\universedev.loc\app\view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel\domains\universedev.loc\app\view" />
+      <recent name="E:\OSPanel\domains\universedev.loc\app\view\cookie" />
+      <recent name="E:\OSPanel\domains\universedev.loc" />
+      <recent name="E:\OSPanel\domains\universedev.loc\app\data-list" />
+      <recent name="E:\OSPanel\domains\universedev.loc\app" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc191649-a3ce-487e-aab3-472b18d98d04" name="Default Changelist" comment="" />
+      <created>1584975758264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584975758264</updated>
+      <workItem from="1584975759882" duration="34396000" />
+      <workItem from="1585132865372" duration="84000" />
+      <workItem from="1585236010882" duration="5483000" />
+      <workItem from="1585292902385" duration="5083000" />
+      <workItem from="1585650613838" duration="20653000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="72" key="#Composer" timestamp="1584975767005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#Composer/0.0.1536.824@0.0.1536.824" timestamp="1584975767005" />
+    <state x="361" y="72" key="#Deployment" timestamp="1585046951176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1585046951176" />
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585652945120">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585652945120" />
+    <state x="-173" y="184" width="1532" height="637" maximized="true" key="DiffContextDialog" timestamp="1585726231732">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-173" y="184" width="1532" height="637" maximized="true" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585726231732" />
+    <state x="93" y="93" width="1350" height="638" key="DirDiffDialog" timestamp="1585729117491">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DirDiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1585729117491" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1585729858040">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585729858040" />
+    <state x="604" y="337" key="NewPhpFileDialog" timestamp="1585237931047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="337" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1585237931047" />
+    <state x="630" y="312" key="WebDeployment.AddServerDialog.v.1" timestamp="1584977987409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="630" y="312" key="WebDeployment.AddServerDialog.v.1/0.0.1536.824@0.0.1536.824" timestamp="1584977987409" />
+    <state x="585" y="144" key="ftp.server.browser" timestamp="1584978069153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="585" y="144" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1584978069153" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585037947931">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585037947931" />
+  </component>
+</project>

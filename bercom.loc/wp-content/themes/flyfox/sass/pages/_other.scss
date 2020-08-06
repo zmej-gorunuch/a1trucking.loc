@@ -1,0 +1,36 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.other-page {
+  height: 100vh;
+  background: $whiteColor;
+  color: $accentColor;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title, &__description {
+
+  }
+
+  &__description {
+    margin: 19px 5% 24px 5%;
+  }
+
+  &__number {
+    @include fontSize(100, 200);
+    line-height: 1;
+  }
+}

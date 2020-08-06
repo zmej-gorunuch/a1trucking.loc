@@ -1,0 +1,382 @@
+.tryforfree
+	padding-top: 3.125vw
+	
+.tryforfree__block
+	display: flex
+	flex-direction: column
+	text-align: center
+	justify-content: center
+	width: 100%
+
+.tryforfree__title
+	width: 56.406vw
+	margin-bottom: 1.458vw
+	margin: 0 auto
+
+.tryforfree__image
+	margin-bottom: 3.594vw
+
+.tryforfree__img
+	max-width: 47.604vw
+
+.tryforfree__text
+	text-align: left
+	max-width: 47.656vw
+	margin: 0 auto
+	font-weight: 300
+
+.tryforfree__form
+	padding-top: 3.594vw
+
+.tryforfree__form-block
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	width: 100%
+
+.tryforfree__form-title
+	margin: 0 auto
+	margin-bottom: 1.563vw
+
+.form-info
+	max-width: 19.3vw
+	color: $darkgrey
+	margin: 5px 0
+
+.tryforfree__text p
+	margin-bottom: 15px
+
+// How to srart
+.how-to-start__header
+	display: flex
+	flex-direction: column
+	max-width: 100%
+	align-items: center
+	margin: 0 auto 2.604vw
+
+.how-to-start
+	padding-top: 3.125vw
+
+.how-to-start__title
+	margin-bottom: 0.521vw
+
+.hot-to-start__blocks
+	width: 74.896vw
+	margin: 0 auto
+
+.how-to-start__block
+	display: flex
+
+.step
+	color: $white
+	padding: 0 0.625vw
+	background: $accent
+	display: inline
+	text-transform: uppercase
+	font-size: 0.781vw
+	font-weight: 500
+	border-radius: 4px
+
+.how-to-start__img
+	max-width: 19.688vw
+
+.how-to-start__step-title
+	font-size: 25px
+	line-height: 35px
+	font-weight: 500
+	margin: 0.781vw 0
+
+.how-to-start__step-descr
+	color: $darkgrey
+	max-width: 39.375vw
+	font-weight: 300
+
+.how-to-start__block--even .how-to-start__image
+	margin-left: 2.865vw
+
+.how-to-start__block--odd .how-to-start__image
+	margin-right: 2.865vw
+
+.how-to-start__block--even
+	flex-direction: row-reverse
+
+.how-to-start__block--even
+	position: relative
+	margin-bottom: 8.281vw
+	&::after
+		content: ''
+		background-image: url(../images/dest/how-to-start-2-2.png)
+		position: absolute
+		top: 100%
+		left: 50%
+		transform: translateX(-50%)
+		height: 8.281vw
+		width: 49.479vw
+		background-repeat: no-repeat
+		background-size: contain
+
+.how-to-start__block--even:last-child
+	margin-bottom: 3.333vw
+	&:after
+		display: none
+
+.how-to-start__block--odd
+	margin-bottom: 8.281vw
+	position: relative
+	&::after
+		content: ''
+		background-image: url(../images/dest/how-to-start-1-1.png)
+		position: absolute
+		top: 100%
+		left: 50%
+		transform: translateX(-50%)
+		height: 8.281vw
+		width: 49.479vw
+		background-repeat: no-repeat
+		background-size: contain
+
+@media screen and (max-width: 1366px)
+
+	.tryforfree
+		padding-top: 4.466vw
+
+	.tryforfree__title
+		width: 79.283vw
+		margin-bottom: 2.050vw
+		font-size: 3.660vw
+		line-height: 4.392vw
+
+	.tryforfree__image
+		margin-bottom: 5.051vw
+
+	.tryforfree__img
+		max-width: 66.911vw
+
+	.tryforfree__text
+		max-width: 66.911vw
+
+	.tryforfree__form
+		padding-top: 3.514vw
+
+	.tryforfree__form-title
+		margin-bottom: 2.196vw
+
+	.form-info
+		max-width: 30.454vw
+
+	// How to start
+	.how-to-start
+		padding-top: 3.514vw
+
+	.how-to-start__title
+		margin-bottom: 0.586vw
+
+	.hot-to-start__blocks
+		width: 73.939vw
+
+	.step
+		padding: 0 0.878vw
+		font-size: 1.098vw
+		line-height: 1.830vw
+
+	.how-to-start__img
+		max-width: 22.694vw
+
+	.how-to-start__block--even .how-to-start__image
+		margin-left: 3.367vw
+
+	.how-to-start__block--odd .how-to-start__image
+		margin-right: 1.171vw
+
+	.how-to-start__step-title
+		font-size: 1.83vw
+		line-height: 2.562vw
+		margin: 1.098vw 0
+
+	.how-to-start__step-descr
+		max-width: 43.265vw
+
+	.how-to-start__block--odd
+		margin-bottom: 7.373vw
+		&::after
+			height: 15.373vw
+			width: 49.122vw
+
+	.how-to-start__block--even
+		margin-bottom: 7.373vw
+		&::after
+			height: 15.373vw
+			width: 49.122vw
+
+@media screen and (max-width: 992px)
+	.tryforfree
+		padding-top: 4.940vw
+
+	.tryforfree__title
+		width: 76.411vw
+		margin-bottom: 2.923vw
+		font-size: 3.528vw
+		line-height: 4.536vw
+
+	.tryforfree__image
+		margin-bottom: 2.621vw
+
+	.tryforfree__img
+		max-width: 92.137vw
+
+	.tryforfree__text
+		max-width: 72.782vw
+		font-size: 1.815vw
+		line-height: 3.024vw
+
+	.tryforfree__form
+		padding-top: 4.032vw
+
+	.tryforfree__form-title
+		margin-bottom: 2.016vw
+
+	.form-info
+		max-width: 45.464vw
+
+	// How to start
+	.how-to-start
+		padding-top: 4.032vw
+
+	.how-to-start__title
+		margin-bottom: 0.806vw
+
+	.hot-to-start__blocks
+		width: 86.492vw
+
+	.step
+		padding: 0 1.210vw
+		font-size: 1.512vw
+		line-height: 2.520vw
+
+	.how-to-start__img
+		max-width: 31.250vw
+
+	.how-to-start__block--even .how-to-start__image
+		margin-left: 3.831vw
+
+	.how-to-start__block--odd .how-to-start__image
+		margin-right: 1.815vw
+
+	.how-to-start__step-title
+		font-size: 2.520vw
+		line-height: 3.528vw
+		margin: 1.512vw 0
+
+	.how-to-start__step-descr
+		max-width: 55.544vw
+
+	.how-to-start__block--odd
+		margin-bottom: 9.169vw
+		&::after
+			height: 21.169vw
+			width: 58.367vw
+
+	.how-to-start__block--even
+		margin-bottom: 9.169vw
+		&::after
+			height: 21.169vw
+			width: 58.367vw
+
+@media screen and (max-width: 576px)
+
+	.tryforfree
+		padding-top: 8.333vw
+
+	.tryforfree__title
+		width: 91.667vw
+		margin-bottom: 5.556vw
+
+	.tryforfree__image
+		margin-bottom: 5.556vw
+
+	.tryforfree__img
+		max-width: 100%
+
+	.tryforfree__text
+		max-width: 100%
+		font-size: 18px
+		line-height: 30px
+		padding: 0 15px
+
+
+	.tryforfree__form
+		padding-top: 8.681vw
+
+	.tryforfree__form-title
+		margin-bottom: 1.215vw
+		text-align: center
+
+	.form-info
+		max-width: 100%
+		padding: 0 15px
+		margin: 1.389vw 0
+
+	.tryforfree__form
+		.button__send-message
+			margin-top: 1.389vw
+			align-self: start
+			margin-left: 15px
+
+	// How to srart
+	.how-to-start__header
+		text-align: center
+		max-width: 100%
+		padding: 0 15px
+		margin: 0 auto 8.889vw
+
+	.how-to-start
+		margin-top: 13.542vw
+
+	.how-to-start__title
+		margin-bottom: 2.778vw
+
+	.how-to-start__descr
+		font-size: 4.167vw
+		line-height: 6.944vw
+
+	.hot-to-start__blocks
+		width: 91.667vw
+
+	.how-to-start__block
+		flex-direction: column
+		margin-bottom: 19.444vw
+
+	.step
+		padding: 0 12px
+		font-size: 15px
+		line-height: 25px
+
+	.how-to-start__image
+		margin-bottom: 35px
+
+	.how-to-start__img
+		max-width: 100%
+
+	.how-to-start__step-title
+		font-size: 25px
+		line-height: 30px
+		margin: 15px 0
+		width: 100%
+		text-align: center
+
+	.how-to-start__text
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.how-to-start__step-descr
+		max-width: 100%
+		font-size: 18px
+		line-height: 30px
+
+
+	.how-to-start__block--even,
+	.how-to-start__block--odd
+		&::after
+			display: none

@@ -1,0 +1,72 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.single-product {
+  & .breadcrumb {
+    margin: 30px 0 42px 0;
+    @media (max-width: $breakpoint-md) {
+      margin: 20px 0;
+    }
+  }
+
+}
+
+.product {
+  &-icon {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 16px;
+    margin-right: 10%;
+    color: $accentColor;
+  }
+
+  &-description {
+    margin-bottom: 24px;
+  }
+
+  &-characteristic {
+    margin-bottom: 24px;
+
+    & table {
+      width: 100%;
+
+      td, th {
+        padding: 9px 16px;
+        text-align: left;
+        font-size: 16px;
+      }
+
+      & > thead {
+        & th {
+          width: 50%;
+          max-width: 220px;
+        }
+      }
+
+      & > tbody {
+        & > tr {
+          &:nth-child(odd) {
+            background: rgba(49, 69, 142, .1);
+          }
+
+          &:nth-child(even) {
+            background: #EBECF2;
+          }
+
+
+        }
+      }
+
+    }
+  }
+}
+
+.sticky-icon {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 85px;
+}

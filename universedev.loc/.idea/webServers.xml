@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4607bc33-e2c3-4d08-b2d9-e3055d6d9eff" name="universedev.io" url="http://198.245.49.87">
+        <fileTransfer host="198.245.49.87" port="21" rootFolder="/www/universedev.io">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

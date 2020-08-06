@@ -1,0 +1,273 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.primary-screen {
+  color: $accentColor;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  @media (max-width: $breakpoint-md) {
+    text-align: center;
+    height: auto;
+  }
+
+  & .full-height {
+    @media (max-width: $breakpoint-md) {
+      height: auto;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    @media (min-width: 1440px) {
+      position: absolute;
+      top: 95px;
+      left: 60px;
+      right: 60px;
+      height: calc(100% - 145px);
+      width: calc(100% - 120px);
+      z-index: 1;
+    }
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    margin-left: 16%;
+    @media (max-width: $breakpoint-md) {
+      margin-left: 0;
+      padding: 104px 15px 44px 15px;
+    }
+  }
+
+  &__title {
+    font-family: 'Room', sans-serif;
+    margin-bottom: 28px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  &__btn {
+    padding: 16px 32px;
+    min-width: 355px;
+    background: transparent;
+    border: 1px solid $accentColor;
+    color: $accentColor;
+    margin-top: 28px;
+    letter-spacing: normal;
+    @include fontSize(16, 24);
+    @media (max-width: $breakpoint-md) {
+      padding: 10px 52px 10px 20px;
+      margin-top: 24px;
+    }
+
+    & i {
+      font-size: 32px;
+      margin-left: 16px;
+      @include transition(.3);
+      @media (max-width: $breakpoint-md) {
+        font-size: 10px;
+      }
+    }
+
+    &:hover {
+      letter-spacing: 0.13em;
+
+      & i {
+        margin-left: 18px;
+      }
+    }
+  }
+
+}
+
+.home-catalog {
+  padding: 80px 0 50px 0;
+  @media (max-width: $breakpoint-lg) {
+    padding: 50px 0 25px 0;
+  }
+
+  & .container {
+    @media (max-width: $breakpoint-md) {
+      padding: 0;
+    }
+  }
+}
+
+.home-works {
+
+  & .app-screen__wrap {
+    display: none;
+    @media (max-width: $breakpoint-lg) {
+      display: block;
+    }
+  }
+
+  padding: 50px 0;
+  @media (max-width: $breakpoint-lg) {
+    padding: 24px 0 74px 0;
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+    background: $whiteColor;
+  }
+}
+
+.works-item {
+  height: 100%;
+  width: 100%;
+  display: block;
+
+  & .icon-zoom {
+    font-size: 36px;
+    position: absolute;
+    color: $accentColor;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    @include transition(.3);
+  }
+
+  &__icon {
+    background: rgba(255, 255, 255, 0.5);
+    height: 100%;
+
+    & img {
+      opacity: .5;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    z-index: 3;
+    position: relative;
+    @include transition(.3);
+  }
+
+  & figure {
+    height: 100%;
+    width: 100%;
+  }
+
+  & figcaption {
+    position: absolute;
+    bottom: 19px;
+    left: 0;
+    padding: 11px 28px;
+    color: $accentColor;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 12px;
+      background: $accentColor;
+      @include transition(.3);
+      z-index: 1;
+
+    }
+  }
+
+  &:hover {
+
+    & .icon-zoom {
+      opacity: 1;
+    }
+
+    & .works-item__title {
+      color: $whiteColor;
+    }
+
+    & figcaption {
+      &:before {
+        content: '';
+        width: 100%;
+      }
+    }
+  }
+}
+
+.home-partners {
+  padding: 100px 0;
+  @media (max-width: $breakpoint-lg) {
+    padding: 24px 0 74px 0;
+  }
+
+  & .app-screen__wrap {
+    display: none;
+    @media (max-width: $breakpoint-lg) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+    background: $whiteColor;
+  }
+}
+
+.home-about {
+  &__content {
+    padding: 45px 89px 45px 30px;
+    max-width: 560px;
+    color: $whiteColor;
+    @media (max-width: $breakpoint-lg) {
+      padding: 36px 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint-md) {
+      text-align: center;
+    }
+  }
+
+  &__description {
+
+  }
+
+  &__icon {
+    height: 100%;
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(49, 69, 182, 0.8), rgba(49, 69, 182, 0.8));
+
+    & img {
+      object-fit: cover;
+      opacity: 0.2;
+    }
+  }
+}
+
+

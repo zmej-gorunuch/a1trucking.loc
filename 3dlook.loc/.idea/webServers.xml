@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ca33d37f-4e2d-497f-aeba-c5163241cf73" name="3dlook (dev)" url="http://ftp.flyfox.in.ua">
+        <fileTransfer host="ftp.flyfox.in.ua" port="21" rootFolder="/domains/flyfox.in.ua/public_html/3dlook">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

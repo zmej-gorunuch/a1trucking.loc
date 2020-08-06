@@ -1,0 +1,92 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.contacts {
+  @media (max-width: $breakpoint-md) {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .container {
+    @media (max-width: $breakpoint-md) {
+      padding: 0;
+    }
+  }
+
+  &, .full-height {
+    @media (max-width: $breakpoint-md) {
+      height: auto;
+    }
+  }
+
+  &__title {
+    margin: 15px 0 29px 0;
+    color: $accentColor;
+    @media (max-width: $breakpoint-md) {
+      margin: 24px 0;
+    }
+  }
+
+  &__description {
+
+  }
+
+
+  &-list {
+    @media (max-width: $breakpoint-md) {
+      & + & {
+        margin-top: 12px;
+      }
+    }
+
+    &__item {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__wrap {
+      margin-bottom: 48px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  form {
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+}
+
+.map {
+  height: 100%;
+  width: 55%;
+  position: absolute;
+  right: 0;
+  @media (max-width: $breakpoint-md) {
+    height: 500px;
+    width: 100%;
+    position: relative;
+  }
+
+  &-wrap {
+
+    @media (max-width: $breakpoint-md) {
+      position: relative;
+      &:before {
+        content: '';
+        height: 92px;
+        width: 100%;
+        background: linear-gradient(180deg, #F5F5F5 62.5%, rgba(245, 245, 245, 0) 100%);
+        position: absolute;
+        top: -52px;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

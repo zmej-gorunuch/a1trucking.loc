@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /cgi-bin          # закрити каталог скриптів
+Disallow: /?                # закрити параметри запиту на головній
+Disallow: /wp-              # закрити всі файли WP: /wp-json/, /wp-includes, /wp-content/plugins
+Disallow: *?s=              # пошук
+Disallow: *&s=              # пошук
+Disallow: /search           # пошук
+Disallow: /author/          # закрити архів автора
+Disallow: */embed           # закрити всі фрейми
+Disallow: */page/           # закрити всі види пагінації
+Allow: */uploads            # відкрити uploads
+Allow: /*/*.js              # відкрити всередині /wp- (/*/ - для пріорітету)
+Allow: /*/*.css             # відкрити всередині /wp- (/*/ - для пріорітету)
+Allow: /wp-*.png            # відкрити картинки в плагінах, cache папках і т.д.
+Allow: /wp-*.jpg            # відкрити картинки в плагінах, cache папках і т.д.
+Allow: /wp-*.jpeg           # відкрити картинки в плагінах, cache папках і т.д.
+Allow: /wp-*.gif            # відкрити картинки в плагінах, cache папках і т.д.
+Allow: /wp-*.svg            # відкрити картинки в плагінах, cache папках і т.д.
+Allow: /wp-*.pdf            # відкрити файли в плагінах, cache папках і т.д.
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://noa.lviv.ua/sitemap_index.xml

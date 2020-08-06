@@ -1,0 +1,539 @@
+// Common styles	
+button
+	background: $accent
+	color: $white
+	outline: none
+	border: none
+	font-size: .95vw
+	line-height: 100%
+	&:focus
+		outline: none
+
+// __ Login __
+.button__login
+	line-height: 100%
+	border: 1px solid $white
+	border-radius: 4px
+	padding: .45vw 1.25vw
+	background: none
+	position: relative
+	display: flex
+	align-items: center
+	transition: 0.3s
+	height: 2.4vw
+	&:hover
+		background: $white
+		color: $accent
+		box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7)
+	&:hover .button__arrow-right--path
+		fill: $accent
+	&:hover .circle__btn-login
+		stroke: $accent
+		transform: rotate(0)
+	&:hover .button__arrow-right
+		margin-left: 0.260vw
+
+.button__arrow-right--path
+	transition: 0.3s
+
+.button__arrow-right
+	position: absolute
+	transition: 0.3s
+	width: 0.677vw
+	top: 50%
+	transform: translateY(-50%)
+
+.button__block-arrow
+	margin-right: 1.302vw
+	height: 1.042vw
+
+.svg__sircle
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	width: 1.042vw
+	height: 1.042vw
+	z-index: 1000
+
+.circle__btn-login
+	width: 1.042vw
+	height: 1.042vw
+	fill: none
+	stroke: $white
+	stroke-width: 1
+	strock-linecap: round
+	stroke-dasharray: 2.344vw
+	stroke-dashoffset: -0.286vw
+	transform-origin: center
+	transform: rotate(180deg)
+	transition: 0.35s
+
+// __ Try for free __
+
+.button__tff
+	border-radius: 4px
+	width: 9vw
+	height: 2.4vw
+	transition: 0.35s
+	&:hover .circle__btn-ttf:first-child
+		transform: rotate(110deg)
+	&:hover .tff__svg-block::after
+		width: 0.521vw
+		height: 0.521vw
+
+.tff__block
+	color: $white
+	display: flex
+	justify-content: center
+	align-items: center
+
+.tff__svg-block
+	position: relative
+	margin-right: 0.313vw
+	display: flex
+	align-items: center
+	&::after
+		content: ''
+		background: $white
+		border-radius: 100%
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 0.208vw
+		height: 0.208vw
+		position: absolute
+		transition: 0.35s
+
+.svg-ttf
+	width: 1.042vw
+	height: 1.042vw
+	position: relative
+
+.circle__btn-ttf
+	fill: none
+	stroke: $white
+	strock-linecap: round
+	stroke-dasharray: 3.125vw
+	stroke-dashoffset: 0.521vw
+	transform-origin: center
+	transform: rotate(290deg)
+	transition: 0.35s
+	
+// __ Try for free pulse __
+	
+.button__tff--pulse
+	width: 7.031vw
+	height: 7.031vw
+	border-radius: 100%
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	&:hover .svg__ttf-pulse
+		transform: rotate(172deg)
+	&:hover .tff-pulse__svg-block::after
+		width: 1.354vw
+		height: 1.354vw
+
+.button__tff--pulse-inner
+	width: 7.031vw
+	height: 7.031vw
+	background: $accent
+	border-radius: 100%
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	box-sizing: border-box
+	animation: pulse 2s linear infinite
+	z-index: -1
+
+.button__tff--pulse-inner:nth-child(2)
+	animation-delay: 1s
+
+.tff-pulse__svg-block
+	position: relative
+	margin-bottom: 0.521vw
+	&::after
+		content: ''
+		background: $white
+		border-radius: 100%
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 0.625vw
+		height: 0.625vw
+		position: absolute
+		transition: 0.35s
+
+.svg__ttf-pulse
+	width: 3.125vw
+	height: 3.125vw
+	transform: rotate(-8deg)
+	transition: 0.35s
+
+.circle-btn__ttf-pulse
+	fill: none
+	stroke: $white
+	stroke-width: 0.156vw
+	stroke-dasharray: 9.479vw
+	stroke-dashoffset: 0.938vw
+	transform-origin: center
+	transform: rotate(290deg)
+	transition: 0.35s
+
+@keyframes pulse
+	from
+		width: 7.031vw
+		height: 7.031vw
+		opacity: 1
+	to
+		width: 9.531vw
+		height: 9.531vw
+		opacity: 0
+
+// __ Send message __
+
+.button__send-message
+	border-radius: 4px
+	transition: 0.35s
+	&:hover .svg__send-message
+		left: .8vw
+
+.btn-block__send-message
+	padding: 0.625vw 1.25vw
+
+.svg__send-message
+	position: relative
+	left: .4vw
+	transition: 0.35s
+
+// __ View all services __
+
+.button__view-services
+	border-radius: 4px
+	transition: 0.35s
+	&:hover .svg__view-services
+		left: .8vw
+
+.btn-block__view-services
+	padding: 0.625vw 1.25vw
+
+.svg__view-services
+	max-width: 1.25vw
+	position: relative
+	left: .4vw
+	transition: 0.35s
+
+@media screen and (max-width: 1366px)
+
+	button
+		font-size: 15px
+
+	// __ Login __
+	.button__login
+		padding: 6px 20px
+		height: 37px
+		&:hover .circle__btn-login
+			transform: rotate(40deg)
+		&:hover .button__arrow-right
+			margin-left: 6px
+
+	.button__arrow-right
+		width: 12px
+
+	.button__block-arrow
+		margin-right: 22px
+		height: 18px
+
+	.svg__sircle
+		width: 18px
+		height: 18px
+
+	.circle__btn-login
+		width: 18px
+		height: 18px
+		stroke-dasharray: 45
+		stroke-dashoffset: 5.5
+		transform: rotate(220deg)
+
+	// __ Try for free __
+
+	.button__tff
+		width: 142px
+		height: 37px
+		&:hover .tff__svg-block::after
+			width: 10px
+			height: 10px
+
+	.tff__svg-block
+		margin-right: 4px
+		&::after
+			width: 4px
+			height: 4px
+
+	.svg-ttf
+		width: 18px
+		height: 18px
+
+	.circle__btn-ttf
+		stroke-dasharray: 60
+		stroke-dashoffset: 10
+
+	// __ Try for free pulse __
+
+	.tryforfree-link
+		display: none
+
+	.button__tff--pulse
+		width: 135px
+		height: 135px
+		&:hover .svg__ttf-pulse
+			transform: rotate(172deg)
+		&:hover .tff-pulse__svg-block::after
+			width: 26px
+			height: 26px
+
+	.button__tff--pulse-inner
+		width: 135px
+		height: 135px
+
+	.tff-pulse__svg-block
+		margin-bottom: 10px
+		&::after
+			width: 12px
+			height: 12px
+
+	.svg__ttf-pulse
+		width: 60px
+		height: 60px
+		transform: rotate(-8deg)
+
+	.circle-btn__ttf-pulse
+		stroke-width: 3px
+		stroke-dasharray: 182
+		stroke-dashoffset: 18
+		transform: rotate(290deg)
+
+	@keyframes pulse
+		from
+			width: 135px
+			height: 135px
+			opacity: 1
+		to
+			width: 183px
+			height: 183px
+			opacity: 0
+
+	// __ Send message __
+
+	.button__send-message
+		font-size: 1.318vw
+		line-height: 2.196vw
+		border-radius: 4px
+		transition: 0.35s
+		&:hover .svg__send-message
+			left: 1.171vw
+
+	.btn-block__send-message
+		padding: 0.586vw 1.757vw
+
+	.svg__send-message
+		max-width: 1.757vw
+		position: relative
+		left: 0.586vw
+		transition: 0.35s
+
+	// __ View all services __
+
+	.button__view-services
+		font-size: 1.318vw
+		line-height: 2.196vw
+		border-radius: 4px
+		transition: 0.35s
+		&:hover .svg__view-services
+		 left: 1.171vw
+
+	.btn-block__view-services
+		padding: 0.586vw 1.757vw
+
+	.svg__view-services
+		max-width: 1.757vw
+		position: relative
+		left: 0.586vw
+		transition: 0.35s
+
+@media screen and (max-width: 992px)
+	// __ Send message __
+
+	.button__send-message
+		font-size: 1.512vw
+		border-radius: 4px
+		transition: 0.35s
+		line-height: 2.520vw
+		&:hover .svg__send-message
+			left: 1.008vw
+
+	.btn-block__send-message
+		padding: 0.605vw 2.016vw
+
+	.svg__send-message
+		max-width: 6.667vw
+		position: relative
+		left: .8vw
+		transition: 0.35s
+
+	// __ View all services __
+
+	.button__view-services
+		font-size: 1.512vw
+		border-radius: 4px
+		transition: 0.35s
+		line-height: 2.52vw
+		&:hover .svg__view-services
+		 left: 1.008vw
+
+	.btn-block__view-services
+		padding: 0.605vw 2.016vw
+
+	.svg__view-services
+		max-width: 1.757vw
+		position: relative
+		left: .8vw
+		transition: 0.35s
+
+@media screen and (max-width: 576px)
+
+	button
+		font-size: 15px
+
+	// __ Login __
+	.button__login
+		padding: 8px 24px
+		height: 37px
+		&:hover .circle__btn-login
+			transform: rotate(50deg)
+		&:hover .button__arrow-right
+			margin-left: 6px
+
+	.button__arrow-right
+		width: 13px
+
+	.button__block-arrow
+		margin-right: 26px
+		height: 20px
+
+	.svg__sircle
+		width: 20px
+		height: 20px
+
+	.circle__btn-login
+		width: 20px
+		height: 20px
+		stroke-dasharray: 45
+		stroke-dashoffset: 5.5
+		transform: rotate(230deg)
+
+	// __ Try for free __
+
+	.button__tff
+		width: 148px
+		height: 37px
+		&:hover .tff__svg-block::after
+			width: 10px
+			height: 10px
+
+	.tff__svg-block
+		margin-right: 6px
+		&::after
+			width: 4px
+			height: 4px
+
+	.svg-ttf
+		width: 20px
+		height: 20px
+
+	.circle__btn-ttf
+		stroke-dasharray: 60
+		stroke-dashoffset: 10
+
+	// __ Try for free pulse __
+
+	.tryforfree-link
+		display: none
+
+	.button__tff--pulse
+		width: 135px
+		height: 135px
+		&:hover .svg__ttf-pulse
+			transform: rotate(172deg)
+		&:hover .tff-pulse__svg-block::after
+			width: 26px
+			height: 26px
+
+	.button__tff--pulse-inner
+		width: 135px
+		height: 135px
+
+	.tff-pulse__svg-block
+		margin-bottom: 10px
+		&::after
+			width: 12px
+			height: 12px
+
+	.svg__ttf-pulse
+		width: 60px
+		height: 60px
+		transform: rotate(-8deg)
+
+	.circle-btn__ttf-pulse
+		stroke-width: 3px
+		stroke-dasharray: 182
+		stroke-dashoffset: 18
+		transform: rotate(290deg)
+
+	@keyframes pulse
+		from
+			width: 135px
+			height: 135px
+			opacity: 1
+		to
+			width: 183px
+			height: 183px
+			opacity: 0
+
+	// __ Send message __
+
+	.button__send-message
+		font-size: 4.167vw
+		border-radius: 4px
+		transition: 0.35s
+		&:hover .svg__send-message
+			left: 1.953vw
+
+	.btn-block__send-message
+		padding: 3.333vw 6.667vw
+
+	.svg__send-message
+		max-width: 6.667vw
+		position: relative
+		left: 1vw
+		transition: 0.35s
+
+	// __ View all services __
+
+	.button__view-services
+		font-size: 4.167vw
+		border-radius: 4px
+		transition: 0.35s
+		&:hover .svg__view-services
+		 left: 1.953vw
+
+	.btn-block__view-services
+		padding: 3.333vw 6.667vw
+
+	.svg__view-services
+		max-width: 6.667vw
+		position: relative
+		left: 1vw
+		transition: 0.35s

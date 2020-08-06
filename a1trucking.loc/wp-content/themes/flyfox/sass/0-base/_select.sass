@@ -1,0 +1,33 @@
+.select
+	text-transform: uppercase
+	color: $white
+	width: 5.5vw
+
+.select.is-active .select__body
+	display: block
+
+.select__header
+	cursor: pointer
+	display: flex
+	justify-content: space-around
+
+.select__item
+	background: $white
+	color: $accent
+
+.select__item
+	padding: .45vw 1.25vw
+	transition: 0.35s
+	cursor: pointer
+	&:hover
+		background: $accent
+		color: $white
+
+.select__body
+	position: absolute
+	top: calc(100% + 1px)
+	display: none
+
+.select__arrow-down
+	width: .75vw
+	margin-left: 8px

@@ -1,0 +1,467 @@
+.blog-item__img
+	width: 100%
+
+.blog-item__content-header
+	text-align: center
+	margin-top: 1.042vw
+
+.blog-item__title
+	font-size: 2.604vw
+	line-height: 3.125vw
+	margin-bottom: 0.521vw
+	color: $textcolor
+	
+.blog-item__content
+	color: $darkgrey
+	max-width: 63.385vw
+	margin: 0 auto
+
+.blog-item__date
+	font-size: 0.781vw
+	line-height: 1.302vw
+	font-weight: 500
+	text-transform: uppercase
+
+.blog-item__content img
+	max-width: 100%
+
+.blog-item__content p
+	margin: 1.042vw 0
+
+.blog-item__content ul
+	margin: 15px 0
+
+.blog-item__content ul li
+	position: relative
+	padding-left: 0.729vw
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		width: 0.313vw
+		height: 0.313vw
+		background: $accent
+		border-radius: 100%
+
+.blog-item__content ol
+	counter-reset: my-awesome-counter
+	margin: 15px 0
+
+.blog-item__content ol li
+	counter-increment: my-awesome-counter
+
+.blog-item__content ol li::before
+	content: counter(my-awesome-counter) ". "
+	color: $accent
+	font-weight: 500
+	text-align: right
+
+.blog-item__content blockquote
+	padding-left: 1.979vw
+	padding-top: 2.135vw
+	font-size: 2.344vw
+	line-height: 2.865vw
+	position: relative
+	color: $textcolor
+	// margin: 0.521vw 0
+	&::before
+		content: ''
+		background-image: url(../images/icons/quote.svg)
+		background-size: cover
+		background-repeat: no-repeat
+		position: absolute
+		left: 0
+		top: 0
+		width: 5.104vw
+		height: 4.167vw
+		z-index: -1
+
+.share-post
+	background: #d0e3f5
+	width: 100%
+	height: 10.052vw
+	padding: 1.563vw
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+
+.share-post__title
+	font-size: 1.823vw
+	line-height: 2.344vw
+	color: $accent
+	margin-bottom: 1.563vw
+
+.share-post__icons
+	display: flex
+
+// Other article
+
+.other-articles
+	margin-top: 1.042vw
+	padding-bottom: 3.125vw
+
+.other-articles__header
+	font-size: 1.823vw
+	line-height: 2.344vw
+	font-weight: 500
+	text-align: center
+	margin-bottom: 1.563vw
+	color: $textcolor
+	
+.other-articles__img
+	width: 100%
+	height: 16.198vw
+	object-fit: cover
+
+.other-articles__date
+	text-transform: uppercase
+	font-size: 0.781vw
+	font-weight: 500
+	line-height: 1.302vw
+	margin-top: 0.521vw
+
+.other-articles__title
+	font-size: 1.302vw
+	line-height: 1.823vw
+	font-weight: 500
+	margin: 0.417vw 0
+	color: $textcolor
+
+.other-articles__descr
+	font-size: 0.938vw
+	line-height: 1.563vw
+	font-weight: 300
+	color: $darkgrey
+	max-height: 4.688vw
+	overflow: hidden
+
+.other-articles__footer
+	display: flex
+	justify-content: space-between
+	margin-top: 1vw
+
+.read-more
+	background: none
+	color: $accent
+	transition: 0.35s
+	text-transform: uppercase
+	font-size: 0.781vw
+	line-height: .781vw
+	padding-left: 0
+	font-weight: 500
+	&:hover
+		opacity: 0.8
+
+.other-articles__soc-net
+	display: flex
+	align-items: flex-end
+
+.other-articles__soc-icon
+	max-width: 0.781vw
+	max-height: 0.781vw
+	margin-left: 0.417vw
+	transition: 0.35s
+	&:hover
+		opacity: 0.8
+
+@media screen and (max-width: 1366px)
+
+	.blog-item__content-header
+		margin-top: 2.196vw
+
+	.blog-item__title
+		font-size: 3.660vw
+		line-height: 4.392vw
+		margin-bottom: 0.732vw
+
+	.blog-item__content
+		max-width: 62.958vw
+
+	.blog-item__date
+		font-size: 1.098vw
+		line-height: 1.830vw
+		
+	.blog-item__content p
+		margin: 1.442vw 0
+		font-size: 1.318vw
+		line-height: 2.196vw
+
+	.blog-item__content ol li
+		font-size: 1.318vw
+		line-height: 2.196vw
+
+	.blog-item__content ul li
+		padding-left: 1.025vw
+		font-size: 1.318vw
+		line-height: 2.196vw
+		&::before
+			width: 0.439vw
+			height: 0.439vw
+
+	.blog-item__content blockquote
+		padding-left: 2.782vw
+		padding-top: 3.001vw
+		font-size: 2.562vw
+		line-height: 3.294vw
+		// margin: 1.464vw 0
+		&::before
+			width: 7.174vw
+			height: 5.857vw
+
+	.share-post
+		height: 11.054vw
+		padding: 2.196vw
+
+	.share-post__title
+		font-size: 1.83vw
+		line-height: 2.562vw
+		margin-bottom: 1.464vw
+
+	// Other article
+	.other-articles
+		margin-top: 2.196vw
+		padding-bottom: 4.246vw
+		
+	.other-articles__header
+		font-size: 1.830vw
+		line-height: 2.562vw
+		margin-bottom: 0.586vw
+
+	.other-articles__img
+		height: 21.962vw
+
+	.other-articles__date
+		font-size: 1.098vw
+		line-height: 1.830vw
+		margin-top: 0.586vw
+
+	.other-articles__title
+		font-size: 1.830vw
+		line-height: 2.562vw
+		margin: 0.586vw 0
+
+	.other-articles__descr
+		font-size: 1.318vw
+		line-height: 2.196vw
+		max-height: 6.589vw
+
+	.other-articles__footer
+		margin-top: 0.586vw
+
+	.read-more
+		font-size: 1.098vw
+		line-height: 1.830vw
+
+	.other-articles__soc-icon
+		max-width: 1.098vw
+		max-height: 1.098vw
+		margin-left: 0.805vw
+
+@media screen and (max-width: 992px)
+
+	.blog-item__content-header
+		margin-top: 3.024vw
+
+	.blog-item__title
+		font-size: 5.040vw
+		line-height: 6.048vw
+		margin-bottom: 1.008vw
+
+	.blog-item__content
+		max-width: 100%
+		padding: 0 15px
+
+	.blog-item__date
+		font-size: 1.512vw
+		line-height: 2.520vw
+		
+	.blog-item__content p
+		margin: 2.016vw 0
+		font-size: 1.815vw
+		line-height: 3.024vw
+
+	.blog-item__content ol li
+		font-size: 1.815vw
+		line-height: 3.024vw
+
+	.blog-item__content ul li
+		padding-left: 1.411vw
+		font-size: 1.815vw
+		line-height: 3.024vw
+		&::before
+			width: 0.605vw
+			height: 0.605vw
+
+	.blog-item__content blockquote
+		padding-left: 3.831vw
+		padding-top: 4.133vw
+		font-size: 3.528vw
+		line-height: 4.536vw
+		// margin: 1.464vw 0
+		&::before
+			width: 9.879vw
+			height: 8.065vw
+
+	.share-post
+		height: 15.222vw
+		padding: 3.024vw
+
+	.share-post__title
+		font-size: 2.520vw
+		line-height: 3.528vw
+		margin-bottom: 2.016vw
+
+	// Other article
+	.other-articles
+		margin-top: 4.032vw
+		padding-bottom: 5.645vw
+
+	.other-articles__header
+		font-size: 2.520vw
+		line-height: 3.528vw
+		margin-bottom: 3.024vw
+
+	.other-articles__img
+		height: 30.242vw
+
+	.other-articles__date
+		font-size: 1.512vw
+		line-height: 2.520vw
+		margin-top: 0.586vw
+
+	.other-articles__title
+		font-size: 1.830vw
+		line-height: 2.562vw
+		margin: 0.706vw 0
+
+	.other-articles__descr
+		font-size: 1.815vw
+		line-height: 3.024vw
+		max-height: 9.073vw
+
+	.other-articles__footer
+		margin-top: 0.806vw
+
+	.read-more
+		font-size: 1.512vw
+		line-height: 2.520vw
+
+	.other-articles__soc-icon
+		max-width: 1.512vw
+		max-height: 1.512vw
+		margin-left: 1.109vw
+
+@media screen and (max-width: 768px)
+
+	.other-articles .col-md-4
+		padding-right: 15px
+
+	.other-articles .col-md-4:first-child
+		padding-left: 15px
+
+	.other-articles__block
+		margin-bottom: 4.948vw
+
+	.other-articles__item-n
+		display: none
+
+@media screen and (max-width: 576px)
+
+	.blog-item__content-header
+		margin-top: 30px
+
+	.blog-item__title
+		font-size: 35px
+		line-height: 45px
+		margin-bottom: 15px
+
+	.blog-item__content
+		max-width: 100%
+		padding: 0 15px
+
+	.blog-item__date
+		font-size: 15px
+		line-height: 25px
+		
+	.blog-item__content p
+		margin: 15px 0
+		font-size: 18px
+		line-height: 30px
+
+	.blog-item__content ol li
+		font-size: 18px
+		line-height: 30px
+
+	.blog-item__content ul li
+		padding-left: 14px
+		font-size: 18px
+		line-height: 30px
+		&::before
+			width: 6px
+			height: 6px
+
+	.blog-item__content blockquote
+		padding-left: 0
+		padding-top: 41px
+		font-size: 35px
+		line-height: 45px
+		&::before
+			width: 98px
+			height: 80px
+
+	.share-post
+		height: 151px
+		padding: 30px 0
+		margin-left: -15px
+		width: 100vmin
+
+	.share-post__title
+		font-size: 25px
+		line-height: 35px
+		margin-bottom: 20px
+
+	// Other article
+	.other-articles
+		margin-top: 30px
+		padding-bottom: 58px
+
+	.other-articles__header
+		font-size: 25px
+		line-height: 35px
+		margin-bottom: 30px
+
+	.other-articles__img
+		height: 300px
+
+	.other-articles__date
+		font-size: 15px
+		line-height: 25px
+		margin-top: 7px
+
+	.other-articles__title
+		font-size: 25px
+		line-height: 35px
+		margin: 8px 0
+
+	.other-articles__descr
+		font-size: 18px
+		line-height: 30px
+		max-height: 90px
+
+	.other-articles__footer
+		margin-top: 8px
+
+	.read-more
+		font-size: 15px
+		line-height: 25px
+
+	.other-articles__soc-icon
+		max-width: 15px
+		max-height: 15px
+		margin-left: 11px
+
+	.other-articles__item-n
+		display: block

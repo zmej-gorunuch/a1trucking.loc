@@ -1,0 +1,22 @@
+<?php
+return [
+	'WebApp',
+	'eCommerce',
+	'Transport & Logistics',
+	'Website',
+	'Marketplace',
+	'Enterprise Software',
+	'Mobile App',
+	'FinTech',
+	'Media & Entertainment',
+	'Cloud Solution',
+	'Social Platform',
+	'Internet of Things',
+	'Healthcare',
+	'RETAIL & DISTRIBUTION',
+	'SaaS & PaaS',
+	'Travel and Hospitality',
+	'Telecom',
+	'CRM/ERP',
+	'Type your variant',
+];

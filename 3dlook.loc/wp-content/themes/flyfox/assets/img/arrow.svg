@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="105px" viewBox="0 0 145 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>arrow-el</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="78.1027492%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FB2059" offset="0%"></stop>
+            <stop stop-color="#8138E9" stop-opacity="0.50038243" offset="46.813966%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="technology" transform="translate(-623.000000, -600.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-2" transform="translate(389.000000, 433.000000)">
+                <polygon id="arrow-el" points="234 189.449381 288.02741 189.748415 288.02741 167 379 219.5 288.02741 272 288.02741 248.764726 234 248.764726"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,89 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.text {
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-left {
+    text-align: left;
+  }
+}
+
+.--regular {
+  font-weight: 400;
+}
+
+.--medium {
+  font-weight: 450;
+}
+
+.--demi {
+  font-weight: 600;
+}
+
+.--bold {
+  font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'AvenirNextCyr', sans-serif;
+}
+
+.heading-1 {
+  @include fontSize(42, 75);
+  line-height: 1;
+}
+
+.heading-2 {
+  @include fontSize(24, 48);
+  line-height: 1.08;
+}
+
+.heading-3 {
+  @include fontSize(24, 36);
+  line-height: 1.22;
+}
+
+.heading-4 {
+  @include fontSize(20, 24);
+  line-height: 1.2;
+}
+
+.heading-5 {
+  font-size: 20px;
+}
+
+.heading-6 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.icon-arRight:before {
+  content: "\e900";
+}
+
+.icon-arrowBottom:before {
+  content: "\e905";
+}
+
+.icon-arrowLeft:before {
+  content: "\e901";
+}
+
+.icon-arrowRight:before {
+  content: "\e902";
+}
+
+.icon-quote:before {
+  content: "\e903";
+}
+
+.icon-zoom:before {
+  content: "\e904";
+}

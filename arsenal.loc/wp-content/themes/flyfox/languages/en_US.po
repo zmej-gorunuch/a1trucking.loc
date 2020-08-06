@@ -1,0 +1,77 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-03-27 09:10+0000\n"
+"Last-Translator: admin_3dlook <example@mail.ua>\n"
+"Language-Team: English (United States)\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#: functions.php
+msgid "Головне меню"
+msgstr "Main menu"
+
+#: functions.php
+msgid "Сайдбар"
+msgstr "Sidebar"
+
+#: functions.php
+msgid "Додайте сюди віджети."
+msgstr "Add widgets here."
+
+#: functions.php
+msgid "Меню"
+msgstr "Menus"
+
+#: post_type
+msgid "Додати новий запис"
+msgstr "Add New"
+
+#: post_type
+msgid "Редагувати запис"
+msgstr "Edit"
+
+#: post_type
+msgid "Новий запис"
+msgstr "New Record"
+
+#: post_type
+msgid "Переглянути запис"
+msgstr "View"
+
+#: post_type
+msgid "Знайти запис"
+msgstr "Search Records"
+
+#: post_type
+msgid "Записів не знайдено"
+msgstr "No records found."
+
+#: post_type
+msgid "В корзині записів не знайдено"
+msgstr "No records found."
+
+#: post_type
+msgid "Всі записи"
+msgstr "All Records"
+
+#: post_type
+msgid "Додати"
+msgstr "Add"
+
+#: functions-acf.php
+msgid "Загальні налаштування теми"
+msgstr "Theme general settings"
+
+#: functions-acf.php
+msgid "Тема"
+msgstr "Theme"

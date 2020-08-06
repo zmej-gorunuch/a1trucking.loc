@@ -1,0 +1,112 @@
+.form__block
+	display: flex
+	flex-direction: column
+
+.form-error
+	margin-top: 4px
+	font-size: .65vw
+	line-height: .85vw
+	color: #EA2F2F
+
+.label
+	font-size: .8vw
+	line-height: 1.3vw
+	color: $darkgrey
+
+.input,
+.textarea
+	border: 2px solid #E7EEFF
+	background: #E7EEFF
+	border-radius: 4px
+	outline: none
+	font-size: .8vw
+	padding: .55vw .8vw
+	width: 19.3vw
+	transition: 0.35s
+	appearance: none
+	
+.textarea
+	height: 9.3vw
+	resize: none
+
+.input:focus,
+.textarea:focus
+	border-color: #1968B3
+	background: #E7EEFF
+
+.required
+	color: #EA2F2F
+
+.form__block
+	margin-bottom: 0.81vw
+
+@media screen and (max-width: 1366px)
+
+	.form-error
+		font-size: 0.878vw
+		line-height: 1.318vw
+
+	.label
+		font-size: 1.171vw
+		line-height: 1.903vw
+
+	.input,
+	.textarea
+		font-size: 1.171vw
+		width: 30.454vw
+		padding: 0.732vw 1.171vw
+
+	.textarea
+		height: 13.324vw
+
+@media screen and (max-width: 992px)
+
+	.form-error
+		font-size: 1.210vw
+		line-height: 1.815vw
+
+	.label
+		font-size: 1.613vw
+		line-height: 2.621vw
+
+	.input,
+	.textarea
+		font-size: 1.613vw
+		width: 45.464vw
+		padding: 1.008vw 1.613vw
+
+	.textarea
+		height: 18.347vw
+
+@media screen and (max-width: 576px)
+
+	.form
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.form-error
+		margin-top: 1.111vw
+		font-size: 3.333vw
+		line-height: 5vw
+
+	.label
+		font-size: 4.444vw
+		line-height: 7.222vw
+
+	.input,
+	.textarea
+		outline: none
+		font-size: 4.444vw
+		padding: 2.778vw 4.444vw
+		width: 330px
+		margin-bottom: 4.167vw
+
+	.textarea
+		height: 329px
+
+@media screen and (max-width: 576px)
+
+	.input,
+	.textarea
+		width: 91.667vw

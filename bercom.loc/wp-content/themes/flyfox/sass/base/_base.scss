@@ -1,0 +1,270 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.default-icon {
+  width: 100%;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.--relative {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.overlap {
+  position: relative;
+  z-index: 2;
+}
+
+body.active, html.active {
+  overflow: hidden;
+}
+
+.full-height, body, html {
+  height: 100%;
+}
+
+.body-padding {
+  height: 85px;
+  @media (max-width: $breakpoint-lg) {
+    height: 63px;
+  }
+}
+
+.app {
+  &-section {
+
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &-screen {
+    &__wrap {
+      margin-bottom: -18px;
+      padding: 32px 0 42px 0;
+    }
+
+    &__title {
+      color: $accentColor;
+      position: relative;
+
+      &.--line {
+        &:after {
+          content: '';
+          background: $accentColor;
+          width: 48px;
+          height: 3px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -9px;
+        }
+      }
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      @include fontSize(54, 150);
+      line-height: 0.9;
+      color: rgba(0, 0, 0, .05);
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  &-nav {
+    margin: 50px 0;
+    @media (max-width: $breakpoint-md) {
+      margin: 30px 0;
+    }
+
+    &__item {
+      display: inline-block;
+      width: 100%;
+      max-width: 183px;
+      border: 1px solid $accentColor;
+      @include transition(.3);
+      @media (max-width: $breakpoint-md) {
+        width: auto;
+      }
+
+      & a {
+        font-family: 'Room', sans-serif;
+        font-weight: bold;
+        @include fontSize(16, 18);
+        display: block;
+        line-height: 1.1;
+        padding: 12px;
+        color: $accentColor;
+        @include transition(.3);
+      }
+
+      &.current, &:hover {
+        background: $accentColor;
+
+        & a {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+}
+
+
+.carousel {
+  opacity: 0;
+  @media (max-width: $breakpoint-lg) {
+    padding-bottom: 26px;
+  }
+
+  &.loadSlider {
+    opacity: 1;
+  }
+}
+
+.app {
+  &-carousel {
+    &__wrap {
+      &.--home {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 31px;
+          left: 0;
+          height: 90px;
+          width: 100%;
+          background: rgba(49, 69, 182, 0.08);
+          @media (max-width: $breakpoint-lg) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__item {
+      width: 25%;
+      height: 239px;
+      padding: 0 15px;
+
+      @media (max-width: $breakpoint-xl) {
+       // width: 45%;
+      }
+      @media (max-width: $breakpoint-lg) {
+        width: 65%;
+        height: 200px;
+      }
+      @media (max-width: $breakpoint-md) {
+        width: 100%;
+      }
+    }
+
+    &__icon {
+      height: 100%;
+
+      & img {
+        object-fit: cover;
+      }
+    }
+
+    &-nav {
+      font-size: 0;
+
+      &__title {
+        color: $accentColor;
+        margin-bottom: 16px;
+
+      }
+
+      &__arrow {
+        width: 48px;
+        height: 48px;
+        background: transparent;
+        border: 1px solid $accentColor;
+        border-radius: 100%;
+        display: inline-block;
+        padding: 0;
+        @include transition(.3);
+
+        & + .app-carousel-nav__arrow {
+          margin-left: 16px;
+        }
+
+        & i {
+          font-size: 19px;
+          color: $accentColor;
+          margin: 0 auto;
+          @include transition(.3);
+        }
+
+        &:hover {
+          background: $accentColor;
+
+          & i {
+            color: $whiteColor
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-caption {
+  width: 25%;
+  height: 239px;
+  padding: 0 15px;
+  position: absolute;
+  z-index: 9;
+  left: 12.5%;
+  @media (max-width: $breakpoint-xl) {
+   // width: 45%;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    display: none;
+  }
+
+  &:after {
+    content: '';
+    width: 70%;
+    height: 100%;
+    background: url(../img/carouselIcon.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 1;
+  }
+
+  &__content {
+    background: $whiteColor;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    width: 100%;
+    padding: 36px;
+  }
+}

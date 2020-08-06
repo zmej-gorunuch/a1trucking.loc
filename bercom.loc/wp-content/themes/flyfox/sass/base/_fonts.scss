@@ -1,0 +1,62 @@
+/* Poppins */
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  font-weight: 750;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Room';
+  src: url('../fonts/Room-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* icomoon */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?rpy6i7');
+  src: url('../fonts/icomoon.eot?rpy6i7#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?rpy6i7') format('truetype'),
+  url('../fonts/icomoon.woff?rpy6i7') format('woff'),
+  url('../fonts/icomoon.svg?rpy6i7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
